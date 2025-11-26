@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Services</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+
+<body class="light-theme">
+
+
+ <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <a href="HomePage.html">
+  <img src="Images/logo.png" alt="PureRide Logo">
+  </a>
+    </div>
+
+    <nav>
+      <ul class="nav">
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="About-Us.html">About Us</a></li>
+        <li><a href="serviceProvidersDashboard.html">Service Provider's Dashboard</a></li>
+        <li><a href="previousRequests.html">Customer Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<nav class="breadcrumb">
+  <a href="HomePage.html">Home</a> &gt;
+  <span>Our Services</span>
+</nav>
+
+
+ <main> 
+    <h2>Our Services</h2>
+      <div class="services-header">
+      <p>
+          At <strong>PureRide</strong>, we take pride in keeping your car looking spotless and feeling brand new. 
+          Whether you need a quick wash, professional window tinting, or a full detailing session — we’ve got you covered. 
+          Our team uses top-quality products and expert care to make sure your vehicle shines inside and out. 
+          Explore our services below and give your car the attention it deserves.
+      </p>
+
+      <!-- Sort control -->
+      <div class="sort">
+
+        <select id="sortServices" name="sort" aria-label="Sort services" class="sort__select">
+        <option value="" selected disabled>Sort by</option>
+
+        <optgroup label="Price">
+        <option value="price-asc">Price: Low → High</option>
+        <option value="price-desc">Price: High → Low</option>
+        </optgroup>
+
+        <optgroup label="Name">
+        <option value="name-asc">Name: A → Z</option>
+        <option value="name-desc">Name: Z → A</option>
+        </optgroup>
+       </select>
+      </div>
+
+      </div>
+       
+      <div class="services">
+  <!-- Card 1 -->
+  <article id="Car-Wash" class="card__continer">
+    <button class="fav-btn" aria-label="Favorite Engine Cleaning">
+  <img class="fav-heart" src="Images/heart-empty.png" alt="Favorite">
+</button>
+    <div class="card__media">
+      <img src="Images/CarWash.png" alt="Car Wash">
+    </div>
+    <div class="card__body">
+      
+      <h2 class="card__title">Car Wash</h2>      
+
+
+      <p class="card__text">
+        Give your car the refresh it deserves.
+        Our complete car wash includes gentle exterior cleaning with high-quality, paint-safe shampoos, tire shine, and streak-free window cleaning.
+        We also take care of the details — removing dust, mud, and smudges to make your vehicle sparkle inside and out.
+        Perfect for those who want their car to look spotless and feel brand new every day.
+      </p>
+      <div class="card__price">
+        80 SR
+      </div>
+    </div>
+  </article>
+
+  <!-- Card 2 -->
+  <article id="Window-Tinting" class="card__continer">
+    <div class="card__media">
+      <img src="Images/WindowT.png" alt="Window Tinting">
+    </div>
+    <div class="card__body">
+      <h2 class="card__title">Window Tinting</h2>
+
+      <!-- زر القلب -->
+      <button class="fav-btn" aria-label="Favorite Engine Cleaning">
+  <img class="fav-heart" src="Images/heart-empty.png" alt="Favorite">
+</button>
+
+
+      <p class="card__text">
+        Upgrade your driving experience with our professional window tinting service.
+        We use premium films that reduce glare, block harmful UV rays, and help maintain a cooler temperature inside your car.
+        Beyond protection, our tinting adds a sleek, modern look while giving you the privacy and comfort you deserve on the road.
+        Ideal for drivers who want style, safety, and comfort all in one.
+      </p>
+      <div class="card__price">
+        120 SR
+      </div>
+    </div>
+  </article>
+
+  <!-- Card 3 -->
+  <article id="Engine-Cleaning" class="card__continer">
+    <div class="card__media">
+      <img src="Images/EnginClean.png" alt="Engine Cleaning">
+    </div>
+    <div class="card__body">
+      <h2 class="card__title">Engine Cleaning</h2>
+
+      <!-- زر القلب -->
+    <button class="fav-btn" aria-label="Favorite Engine Cleaning">
+  <img class="fav-heart" src="Images/heart-empty.png" alt="Favorite">
+</button>
+
+
+      <p class="card__text">
+        Keep your car performing at its best with our deep engine cleaning service.
+        We safely remove grease, oil, and dust buildup that can affect your engine’s performance and appearance.
+        Our team uses specialized products to clean delicate parts without causing any damage — ensuring your engine runs cooler and lasts longer.
+        Because a clean engine isn’t just about looks, it’s about reliability.
+      </p>
+      <div class="card__price">
+        95 SR
+      </div>
+    </div>
+  </article>
+
+  <!-- Card 4 -->
+  <article id="Polishing-Waxing" class="card__continer">
+    <div class="card__media">
+      <img src="Images/Polish.jpg" alt="Polishing & Waxing">
+    </div>
+    <div class="card__body">
+      <h2 class="card__title">Polishing &amp; Waxing</h2>
+
+      <!-- زر القلب -->
+    <button class="fav-btn" aria-label="Favorite Engine Cleaning">
+  <img class="fav-heart" src="Images/heart-empty.png" alt="Favorite">
+</button>
+
+
+      <p class="card__text">
+        Bring back your car’s shine with our professional polishing and waxing service.
+        We carefully remove light scratches, swirl marks, and dullness caused by sun exposure and dirt.
+        Then, we apply a premium wax coating to protect the paint and enhance its glossy finish.
+        The result? A car that looks newer, feels smoother, and stays protected longer.
+      </p>
+      <div class="card__price">
+        110 SR 
+      </div>
+    </div>
+  </article>
+</div>
+
+  </main>
+
+    <!-- Footer -->
+<footer>
+  <div class="footer-left">
+    <div class="logo">
+      <img src="Images/logo.png" alt="PureRide Logo">
+    </div>
+    <p>Copyright &copy; 2025 PureRide</p>
+  </div>
+
+        
+        <div class="contact-info">
+            <p>Contact us:</p>
+            <div><img src="Images/email.png" alt="email"> PureRide@email.com</div>
+            <div><img src="Images/phone-call.png" alt="phone"> +966505050505</div>
+        </div>
+
+        <div class="social-media">
+            <p>Follow us on Social:</p>
+            <div>
+                <img src="Images/instagram.png" alt="Instagram" >
+                <img src="Images/facebook.png" alt="Facebook" >
+                <img src="Images/whatsapp.png" alt="WhatsApp" >
+                <img src="Images/twitter.png" alt="Twitter" >
+            </div>
+        </div>
+    </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

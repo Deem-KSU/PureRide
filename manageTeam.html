@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Manage Staff member</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+
+<body class="light-theme">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <a href="HomePage.html">
+  <img src="Images/logo.png" alt="PureRide Logo">
+  </a>
+    </div>
+
+    <nav>
+      <ul class="nav">
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="About-Us.html">About Us</a></li>
+        <li><a href="serviceProvidersDashboard.html">Service Provider's Dashboard</a></li>
+        <li><a href="previousRequests.html">Customer Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb">
+  <a href="HomePage.html">Home</a> &gt;
+  <a href="serviceProvidersDashboard.html">Service provider's Dashboard</a> &gt;
+  <span>Manage staff members</span>
+</nav>
+<section class="services">
+    <h2>Manage Staff Members</h2>
+
+    <form class="members-grid"
+          id="deleteForm"
+          action="#"
+          method="post"
+          onsubmit="handleDelete(event)">
+
+      <article class="card__continer">
+        <div class="card__media">
+          <img src="Images/staff1.jpg" alt="Staff Photo">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Ahmed Khalid</h3>
+        </div>
+        <input type="checkbox" class="card__checkbox">
+      </article>
+
+      <article class="card__continer">
+        <div class="card__media">
+          <img src="Images/staff2.jpg" alt="Staff Photo">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Omar Faisal</h3>
+        </div>
+        <input type="checkbox" class="card__checkbox">
+      </article>
+
+      <article class="card__continer">
+        <div class="card__media">
+          <img src="Images/staff3.jpg" alt="Staff Photo">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Khalid Nasser</h3>
+        </div>
+        <input type="checkbox" class="card__checkbox">
+      </article>
+
+      <article class="card__continer">
+        <div class="card__media">
+          <img src="Images/staff4.jpg" alt="Staff Photo">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Nasser Fahad</h3>
+        </div>
+        <input type="checkbox" class="card__checkbox">
+      </article>
+
+      <article class="card__continer">
+        <div class="card__media">
+          <img src="Images/staff5.jpg" alt="Staff Photo">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Abdullah Saad</h3>
+        </div>
+        <input type="checkbox" class="card__checkbox">
+      </article>
+
+      <article class="card__continer">
+        <div class="card__media">
+          <img src="Images/staff6.jpg" alt="Staff Photo">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Majed Salem</h3>
+        </div>
+        <input type="checkbox" class="card__checkbox">
+      </article>
+
+      <button type="submit" class="btn-primary">Delete</button>
+    </form>
+  </section>
+
+  <section class="form-section">
+    <h2>Add New Member</h2>
+
+    <form action="#"
+          method="post"
+          enctype="multipart/form-data"
+          class="form-style"
+          id="addMemberForm"
+          novalidate
+          onsubmit="handleAddMember(event)">
+
+      <div class="name-fields">
+        <div>
+          <label>First Name
+            <input type="text" name="fName" id="firstName" placeholder="Add text">
+          </label>
+        </div>
+        <div class="last-name">
+          <label>Last Name
+            <input type="text" name="lName" id="lastName" placeholder="Add text">
+          </label>
+        </div>
+      </div>
+
+      <label>Email
+        <input type="email" name="email" id="email" placeholder="Add text">
+      </label>
+
+      <label>Date of Birth
+        <input type="date" name="DOB" id="dob">
+      </label>
+
+      <label>Area of Expertise
+        <input type="text" name="Area-Expertise" id="areaExpertise" placeholder="Add text">
+      </label>
+
+      <label>Skills
+        <textarea name="skills" id="skills" placeholder="Add text"></textarea>
+      </label>
+
+      <label>Education 
+        <select name="education" id="education">
+          <option>Choose Education Level</option>
+          <option>High School</option>
+          <option>Diploma</option>
+          <option>Bachelors Degree</option>
+          <option>Masters Degree</option>
+          <option>Certification Course</option>
+        </select>
+      </label>
+
+      <label for="photo">Photo</label>
+      <div class="file-upload-box">
+        <img src="Images/upload.png" alt="Upload icon" width="50"><br>
+        <span>Browse Files</span>
+        <input type="file" id="photo" name="photo">
+      </div>
+
+      <button type="submit">Add</button>
+    </form>
+  </section>
+
+
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="footer-left">
+    <div class="logo">
+      <img src="Images/logo.png" alt="PureRide Logo">
+    </div>
+    <p>Copyright &copy; 2025 PureRide</p>
+  </div>
+
+        
+        <div class="contact-info">
+            <p>Contact us:</p>
+            <div><img src="Images/email.png" alt="email"> PureRide@email.com</div>
+            <div><img src="Images/phone-call.png" alt="phone"> +966505050505</div>
+        </div>
+
+        <div class="social-media">
+            <p>Follow us on Social:</p>
+            <div>
+                <img src="Images/instagram.png" alt="Instagram" >
+                <img src="Images/facebook.png" alt="Facebook" >
+                <img src="Images/whatsapp.png" alt="WhatsApp" >
+                <img src="Images/twitter.png" alt="Twitter" >
+            </div>
+        </div>
+    </footer>
+  <script src="script.js"></script>
+</body>
+</html>

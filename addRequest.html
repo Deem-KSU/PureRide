@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Add Request</title>
+  <link rel="stylesheet" href="style.css" >
+  
+</head>
+
+<body class="light-theme">
+   <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <a href="HomePage.html">
+  <img src="Images/logo.png" alt="PureRide Logo">
+  </a>
+    </div>
+
+    <nav>
+      <ul class="nav">
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="About-Us.html">About Us</a></li>
+        <li><a href="serviceProvidersDashboard.html">Service Provider's Dashboard</a></li>
+        <li><a href="previousRequests.html">Customer Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb">
+  <a href="HomePage.html">Home</a> &gt;
+  <a href="previousRequests.html">Customer dashboard</a> &gt;
+  <span>Request A  Service</span>
+</nav>
+
+<!-- form -->
+
+ 
+  <h2>Add Request</h2>
+
+    <form action="#" method="post" class="form-style" id="requestForm">
+      <div class="name-fields">
+        <div>
+          <label>First Name
+          <input type="text" name="fName"  placeholder="Add text" > </label>
+        </div>
+
+        <div class="last-name">
+          <label>Last Name
+          <input type="text" name="LName" placeholder="Add text" ></label>
+        </div>
+      </div>
+
+<div class="due-date">
+        <label>Due date
+        <input type="date" name="dueDate" ></label>
+      </div>
+
+      <div class="Service">
+        <label>Service
+        <select name="Service" id="serviceSelect">
+          <option>Select Service</option>
+          <option>Car Wash</option>
+          <option>Window Tinting</option>
+          <option>Engine Cleaning</option>
+          <option>Polishing & Waxing</option>
+        </select> </label>
+      </div>
+
+
+ <div class="Description">
+        <label>Request Description
+        <textarea name="Request-Description" placeholder="Add text"></textarea>
+    </label>
+      </div>
+      <div id="requestsContainer"> </div>
+      <button type="submit">Submit</button>
+    </form>
+  
+  
+  <!-- Footer -->
+  <footer>
+  <div class="footer-left">
+    <div class="logo">
+      <img src="Images/logo.png" alt="PureRide Logo">
+    </div>
+    <p>Copyright &copy; 2025 PureRide</p>
+  </div>
+
+        
+        <div class="contact-info">
+            <p>Contact us:</p>
+            <div><img src="Images/email.png" alt="email"> PureRide@email.com</div>
+            <div><img src="Images/phone-call.png" alt="phone"> +966505050505</div>
+        </div>
+
+        <div class="social-media">
+            <p>Follow us on Social:</p>
+            <div>
+                <img src="Images/instagram.png" alt="Instagram" >
+                <img src="Images/facebook.png" alt="Facebook" >
+                <img src="Images/whatsapp.png" alt="WhatsApp" >
+                <img src="Images/twitter.png" alt="Twitter" >
+            </div>
+        </div>
+    </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
+

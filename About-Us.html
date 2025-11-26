@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body class="light-theme">
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <a href="HomePage.html">
+  <img src="Images/logo.png" alt="PureRide Logo">
+  </a>
+    </div>
+
+    <nav>
+      <ul class="nav">
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="About-Us.html">About Us</a></li>
+        <li><a href="serviceProvidersDashboard.html">Service Provider's Dashboard</a></li>
+        <li><a href="previousRequests.html">Customer Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="breadcrumb">
+  <a href="HomePage.html">Home</a> &gt;
+  <span>About Us</span>
+</nav>
+
+
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <h2>Meet Our Team</h2>
+    <p class="intro">
+      At PureRide, our skilled professionals are dedicated to keeping every vehicle spotless, polished, and protected.
+    </p>
+
+    <div class="team-grid">
+      <div class="staff-card">
+        <img src="Images/staff1.jpg" alt="Team member">
+        <p><a href="profile1.html">Ahmed Khalid</a></p>
+      </div>
+      <div class="staff-card">
+         <img src="Images/staff2.jpg" alt="Team member">
+        <p><a href="profile2.html">Omar Faisal</a></p>
+      </div>
+      <div class="staff-card">
+         <img src="Images/staff3.jpg" alt="Team member">
+        <p><a href="profile3.html">Khalid Nasser</a></p>
+      </div>
+      <div class="staff-card">
+         <img src="Images/staff4.jpg" alt="Team member">
+        <p><a href="profile4.html">Nasser Fahad</a></p>
+      </div>
+      <div class="staff-card">
+         <img src="Images/staff5.jpg" alt="Team member">
+        <p><a href="profile5.html">Abdullah Saad</a></p>
+      </div>
+      <div class="staff-card">
+        <img src="Images/staff6.jpg" alt="Team member">
+        <p><a href="profile6.html">Majed Salem</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Our Team -->
+  <section class="form-section">
+    <h2>Join Our Team</h2>
+    <p class="intro">
+      Interested in joining a passionate and professional car care team?
+      Fill out the form below<br> to apply and become part of the PureRide family —
+    where precision, dedication, and customer <br> satisfaction drive everything we do.
+    </p>
+
+    <form action="#" method="post" enctype="multipart/form-data" class="form-style" id="joinTeamForm" onsubmit="return validateForm()">
+      <div class="name-fields">
+        <div>
+          <label>First Name
+          <input type="text" name="fName"  placeholder="Add text" > </label>
+        </div>
+        <div class="last-name">
+          <label>Last Name
+          <input type="text" name="lName" placeholder="Add text" ></label>
+        </div>
+      </div>
+
+      <label>Email
+      <input type="email" name="email" placeholder="Add text"></label>
+
+      <label >Date of Birth
+      <input  type="date" name="DOB" ></label>
+
+
+      <label>Area of Expertise
+      <input type="text" name="Area-Expertise"  placeholder="Add text" ></label>
+
+      <label>Skills
+      <textarea name="skills" placeholder="Add text"></textarea></label>
+
+      <label>Education 
+      <select name="education">
+
+          <option>Choose Education Level</option>
+          <option>High School</option>
+          <option>Diploma</option>
+          <option>Bachelors Degree</option>
+          <option>Masters Degree</option>
+          <option>Certification Course</option>
+      </select></label>
+
+
+   
+      <label for="photo">Photo</label>
+
+<div class="file-upload-box">
+    <img src="Images/upload.png" alt="Upload icon" width="50"><br>
+    <span>Browse Files</span>
+    <input type="file" id="photo" name="photo" onchange="getFileName()">
+</div>
+
+<div id="fileNameBox"></div>
+
+                    
+
+      <label>Message
+      <textarea name="message" placeholder="Add text"></textarea></label>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+<footer>
+  <div class="footer-left">
+    <div class="logo">
+      <img src="Images/logo.png" alt="PureRide Logo">
+    </div>
+    <p>Copyright &copy; 2025 PureRide</p>
+  </div>
+
+        
+        <div class="contact-info">
+            <p>Contact us:</p>
+            <div><img src="Images/email.png" alt="email"> PureRide@email.com</div>
+            <div><img src="Images/phone-call.png" alt="phone"> +966505050505</div>
+        </div>
+
+        <div class="social-media">
+            <p>Follow us on Social:</p>
+            <div>
+                <img src="Images/instagram.png" alt="Instagram" >
+                <img src="Images/facebook.png" alt="Facebook" >
+                <img src="Images/whatsapp.png" alt="WhatsApp" >
+                <img src="Images/twitter.png" alt="Twitter" >
+            </div>
+        </div>
+    </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

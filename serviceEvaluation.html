@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="UTF-8">
+  <title>Service Evaluation</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+
+<body class="light-theme">
+   <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <a href="HomePage.html">
+  <img src="Images/logo.png" alt="PureRide Logo">
+  </a>
+    </div>
+
+    <nav>
+      <ul class="nav">
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="About-Us.html">About Us</a></li>
+        <li><a href="serviceProvidersDashboard.html">Service Provider's Dashboard</a></li>
+        <li><a href="previousRequests.html">Customer Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <nav class="breadcrumb">
+  <a href="HomePage.html">Home</a> &gt;
+  <a href="previousRequests.html">Customer dashboard</a> &gt;
+  <span>Service Evaluation</span>
+</nav>
+<!-- form -->
+
+  <h2>Service Evaluation</h2>
+
+<form action="#" method="post" class="form-style" id="evalForm">
+ <div class="Service">
+        <label> Select Service
+        <select name="service-eval" id="service-eval">
+          <option >choose a service</option>
+          <option>Car Wash</option>
+          <option>Window Tinting</option>
+          <option>Engine Cleaning</option>
+          <option>Polishing & Waxing</option>
+        </select></label>
+      </div>
+
+<label>Rating</label><br>
+
+  <div class="rating">
+    <input type="radio" id="star5" name="rating" value="5">
+    <label for="star5">★</label>
+    <input type="radio" id="star4" name="rating" value="4" >
+    <label for="star4">★</label>
+    <input type="radio" id="star3" name="rating" value="3" >
+    <label for="star3">★</label>
+    <input type="radio" id="star2" name="rating" value="2" >
+    <label for="star2">★</label>
+    <input type="radio" id="star1" name="rating" value="1" >
+    <label for="star1">★</label>
+  </div>
+
+ <div class="feedback">
+        <label>Feedback
+        <textarea name="feedback" placeholder="Writ your feedback here..."></textarea>
+     </label></div>
+
+  <button type="submit">Submit</button>
+</form>
+
+
+   <!-- Footer -->
+<footer>
+  <div class="footer-left">
+    <div class="logo">
+      <img src="Images/logo.png" alt="PureRide Logo">
+    </div>
+    <p>Copyright &copy; 2025 PureRide</p>
+  </div>
+
+        
+        <div class="contact-info">
+            <p>Contact us:</p>
+            <div><img src="Images/email.png" alt="email"> PureRide@email.com</div>
+            <div><img src="Images/phone-call.png" alt="phone"> +966505050505</div>
+        </div>
+
+        <div class="social-media">
+            <p>Follow us on Social:</p>
+            <div>
+                <img src="Images/instagram.png" alt="Instagram" >
+                <img src="Images/facebook.png" alt="Facebook" >
+                <img src="Images/whatsapp.png" alt="WhatsApp" >
+                <img src="Images/twitter.png" alt="Twitter" >
+            </div>
+        </div>
+    </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
